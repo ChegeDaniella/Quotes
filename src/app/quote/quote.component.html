@@ -21,12 +21,9 @@
             </div>
         <div class="row">
             <div id="list">
-
-            
-            
                 <div *ngFor='let quote of quotes ;let i = index'>
                     <ul>
-                        <li> {{quote.entry}}</li>
+                        <li appHighlight> {{quote.entry}}</li>
                         <button (click)="toggleDetails(i)">Show Quote Details</button>
                         <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
                     </ul> 
