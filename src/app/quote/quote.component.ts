@@ -20,7 +20,7 @@ export class QuoteComponent implements OnInit {
       let toDelete = confirm('Are you sure you want to delete this Quote and the details')
 
       if (toDelete){
-        this.quotes.splice(index,1)
+        this.quotes.splice(index,1);
       }
     }
 
