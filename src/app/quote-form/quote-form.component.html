@@ -1,22 +1,22 @@
 <div class="container-fluid">
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
         <div class="form-group">
             <label for="quote">Quote:</label><br>
             <textarea id="actualquote" class="form-control" rows="3"[(ngModel)]="newQuote.entry" name='entry' ></textarea>
-            display{{newQuote.entry}}
+            
         </div>
 
         <div class="form-group">
             <label for="author">Author:</label><br>
             <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
-            display{{newQuote.author}}
+            
         </div>
 
         <div class="form-group">
             <label for="submitter">Username For the Person who submitted:</label><br>
             <input type="text" class="form-control" id="submiter"  [(ngModel)]="newQuote.submitter" name="submitter">
-            display{{newQuote.submitter}}
+            
         </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
 
