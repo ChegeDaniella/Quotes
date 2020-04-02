@@ -29,6 +29,9 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLength++;
     this.quotes.push(quote)
   }
+  // highest(){
+  //   likes
+  // }
 
   constructor() { }
 
