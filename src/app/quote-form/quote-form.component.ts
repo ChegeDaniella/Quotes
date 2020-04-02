@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
+// import { NgForm } from '@angular/forms'
 
 @Component({
   selector: 'app-quote-form',
@@ -13,6 +14,7 @@ export class QuoteFormComponent implements OnInit {
 
   submitQuote(){
     this.sub.emit(this.newQuote);
+    // this.quoteForm.reset();
 
   }
 

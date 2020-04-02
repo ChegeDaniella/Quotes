@@ -4,12 +4,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
     </style>
      <!-- Importing google fonts -->
-     <div *ngFor='let quote of quotes ;let i = index'>
-            <p > {{quote.entry}}</p>
-            <button (click)="toggleDetails(i)">Show Quote Details</button>
-            <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-    </div>
-    
     <h1>Quotes.com</h1>
     
         <div class="row">
@@ -23,9 +17,22 @@
                  quote and tell us who said the words.You will also be recognized.<br>
                 Please fill in this form to add a quote.</p>
                     <app-quote-form (sub)="addNewQuote($event)"></app-quote-form>
-                    
                 </div>
-        </div>
+            </div>
+        <div class="row">
+            <div id="list">
+
+            
+            
+                <div *ngFor='let quote of quotes ;let i = index'>
+                    <ul>
+                        <li> {{quote.entry}}</li>
+                        <button (click)="toggleDetails(i)">Show Quote Details</button>
+                        <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                    </ul> 
+                </div>
+            </div>
+        </div>    
     
     
 </div>

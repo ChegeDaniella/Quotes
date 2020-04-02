@@ -15,6 +15,15 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  likes : number=0;
+  upButton(){
+    this.likes ++;
+  }
+  dislikes : number=0;
+  downButton(){
+    this.dislikes ++;
+  }
+
 
   constructor() { }
 
