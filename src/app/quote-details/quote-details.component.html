@@ -1,9 +1,14 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-<p>{{quote.author}}</p>
+
+
+<p>-{{quote.author}}</p>
 <p> This quote was posted  {{quote.actualDate|timePassed}}</p>
-<button (click)="upButton()">like {{likes}}</button>
-<button (click)="quoteDelete(true)" >Delete Entry</button>
-<button (click)="downButton()">Dislike {{dislikes}}</button>
+<i class="fa fa-thumbs-up" aria-hidden="true" (click)="upButton()"> {{likes}}</i>
+<!-- <button (click)="upButton()"  >like {{likes}}</button> -->
+<button (click)="quoteDelete(true)" class="btn btn-outline-danger" >Delete Entry</button>
+<i class="fa fa-thumbs-down" aria-hidden="true" (click)="downButton()"> {{dislikes}}</i>
+
 
 
 

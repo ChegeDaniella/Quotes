@@ -1,7 +1,7 @@
  #all{
   background-image: linear-gradient(blue,white);
   font-family: 'Comic Neue', cursive;
-
+font-size: 20px;
   
 }
 .txt {
@@ -9,12 +9,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+  font-size: 46px;
   color: white;
 }
-.para {
-  font-size: 20px;
-}
+
 h1 {
     font-size: 550%;
     font-family: 'Comic Neue', cursive;

@@ -23,13 +23,14 @@
                 </div>
             </div>
         <div id="quotes">  
+            <p>Your Quotes will be presented here.<br>This is an example of what is to appear</p>
             <div class="row">
                 <div id="list">
                     <div *ngFor='let quote of quotes ;let i = index'>
                         <ul>
                             
                             <li appHighlight = "highest()"> {{quote.entry}} </li>
-                            <button (click)="toggleDetails(i)">Show Quote Details</button>
+                            <button (click)="toggleDetails(i)" class="btn btn-primary">Show Quote Details</button>
                             <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
                         </ul> 
                     </div>
