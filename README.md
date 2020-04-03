@@ -1,6 +1,16 @@
+
+
+
+
 # QuotesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+
+## By Daniella Wangechi Chege
+This is a web based application that is to be used to find quotes.The user will also be able to add there quotes. As it is open to everyone other people will be able to rate if they liked or disliked the quote.
+
+## Technologies Used
+In the making of this web based application the languages used were HTML,CSS and typescript.Since it was generated with angular.
 
 ## Development server
 
@@ -22,6 +32,13 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+# Contact information.
+Email:chegedaniella@gmail.com
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# License
+MIT License
+copyright(c) 2020 Daniella Wangechi Chege
