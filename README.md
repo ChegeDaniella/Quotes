@@ -12,6 +12,8 @@ This is a web based application that is to be used to find quotes.The user will 
 ## Technologies Used
 In the making of this web based application the languages used were HTML,CSS and typescript.Since it was generated with angular.
 
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -31,6 +33,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+### live link
+https://github.com/ChegeDaniella/Quotes
 
 # Contact information.
 Email:chegedaniella@gmail.com
