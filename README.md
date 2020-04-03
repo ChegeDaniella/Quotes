@@ -35,7 +35,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### live link
-https://github.com/ChegeDaniella/Quotes
+https://chegedaniella.github.io/Quotes/
 
 # Contact information.
 Email:chegedaniella@gmail.com
@@ -47,3 +47,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # License
 MIT License
 copyright(c) 2020 Daniella Wangechi Chege
+[My license](Quotes-app/License/LICENSE)
