@@ -1,4 +1,5 @@
 
+<div id="all">
 <div class="container">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
@@ -8,31 +9,35 @@
     
         <div class="row">
                 <div class="col-md-6">
-                    <img src="https://images.pexels.com/photos/744667/pexels-photo-744667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <p class="txt">“Anybody who has survived his childhood has enough information about life to last him the rest of his days.”
+                        ― Flannery O'Connor,</p>
+                    <img src="https://images.pexels.com/photos/2873992/pexels-photo-2873992.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                     
                 </div>
                 <div class="col-md-6">
-                    <p>Quotes are like poems.They can be a paradox or they can be as easy as A, B, C.<br>
+                    <p class=" para">Quotes are like poems.They can be a paradox or they can be as easy as A, B, C.<br>
                     You can find among the best quotes in our website <strong>Quotes.com</strong>.You can also add your own
                  quote and tell us who said the words.You will also be recognized.<br>
                 Please fill in this form to add a quote.</p>
                     <app-quote-form (sub)="addNewQuote($event)"></app-quote-form>
                 </div>
             </div>
-        <div class="row">
-            <div id="list">
-                <div *ngFor='let quote of quotes ;let i = index'>
-                    <ul>
-                        
-                        <li appHighlight = "highest()"> {{quote.entry}} </li>
-                        <button (click)="toggleDetails(i)">Show Quote Details</button>
-                        <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-                    </ul> 
+        <div id="quotes">  
+            <div class="row">
+                <div id="list">
+                    <div *ngFor='let quote of quotes ;let i = index'>
+                        <ul>
+                            
+                            <li appHighlight = "highest()"> {{quote.entry}} </li>
+                            <button (click)="toggleDetails(i)">Show Quote Details</button>
+                            <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                        </ul> 
+                    </div>
                 </div>
-            </div>
-        </div>    
+            </div>    
+        </div>
     
-    
+</div>
 </div>
     
     

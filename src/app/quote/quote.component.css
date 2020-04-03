@@ -1,8 +1,33 @@
+ #all{
+  background-image: linear-gradient(blue,white);
+  font-family: 'Comic Neue', cursive;
+
+  
+}
+.txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+.para {
+  font-size: 20px;
+}
 h1 {
     font-size: 550%;
     font-family: 'Comic Neue', cursive;
     text-align: center;
   }
 img {
-    height: 600px;
+    height: 800px;
+}
+#quotes {
+  border: 1px solid black;
+  height: 500px;
+  width: 550px;
+  margin: auto;
+  padding: 10px;
+  
 }
