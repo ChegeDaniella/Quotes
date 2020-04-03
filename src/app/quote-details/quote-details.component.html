@@ -5,7 +5,7 @@
 <p>-{{quote.author}}</p>
 <p> This quote was posted  {{quote.actualDate|timePassed}}</p>
 <i class="fa fa-thumbs-up" aria-hidden="true" (click)="upButton()"> {{likes}}</i>
-<!-- <button (click)="upButton()"  >like {{likes}}</button> -->
+
 <button (click)="quoteDelete(true)" class="btn btn-outline-danger" >Delete Entry</button>
 <i class="fa fa-thumbs-down" aria-hidden="true" (click)="downButton()"> {{dislikes}}</i>
 

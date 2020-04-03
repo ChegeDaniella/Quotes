@@ -31,6 +31,7 @@
         <div class="form-group">
             <label for="theDate">Enter date of quote input:</label><br>
             <input type="date" class="form-control" id="dates"  [(ngModel)]="newQuote.actualDate" name="actualDate" #actualDate='ngModel' required>
+            display
             <div [hidden]="actualDate.valid || actualDate.pristine" class="alert alert-danger">
                 <p>Description is required</p>
               </div>
