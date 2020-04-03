@@ -9,7 +9,7 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-   new Quote(1,"I beleive in team worker","Martin","John")
+   new Quote(1,"I beleive in team worker","Martin","John",new Date(2020,3,14))
     
   ]
   toggleDetails(index){

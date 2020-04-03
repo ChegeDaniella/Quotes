@@ -1,5 +1,8 @@
 
 <p>{{quote.author}}</p>
+<p> 
+    This quote was posted on {{quote.actualDate |timePassed}}
+</p>
 <button (click)="quoteDelete(true)" >Delete Entry</button>
 <button (click)="upButton()">like {{likes}}</button>
 <button (click)="downButton()">Dislike {{dislikes}}</button>
